@@ -96,13 +96,15 @@ const CalendarPage = () => {
     },
   ];
   return (
-    <Calendar
-      localizer={localizer}
-      events={myEventsList}
-      startAccessor="start"
-      endAccessor="end"
-      style={{ height: 700 }}
-    />
+    <div className="p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-3 vh-">
+      <Calendar
+        localizer={localizer}
+        events={myEventsList}
+        startAccessor="start"
+        endAccessor="end"
+        style={{ height: "80vh" }}
+      />
+    </div>
   );
 };
 
